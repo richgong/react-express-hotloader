@@ -13,7 +13,7 @@ let app = express()
 
 if (!IS_PROD) { // setup HotLoader
     let webpack = require('webpack')
-    let config = require(path.join(process.cwd(), 'webpack.config'))
+    let config = require(path.join(__dirname, '../webpack.config'))
 
     let entry = config.entry;
     for (let key in entry) {
