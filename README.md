@@ -1,4 +1,4 @@
-# React Express Hotloader
+# React Express Hotloader [![npm package](https://img.shields.io/npm/v/react-express-hotloader.svg)](https://www.npmjs.com/package/react-express-hotloader)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
