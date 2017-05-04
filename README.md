@@ -30,7 +30,7 @@ npm run serve
 
 ## Authors
 
-* **Richard Gong** - [my website](http://richgong.com)
+* [Richard Gong](http://richgong.com)
 
 ## License
 

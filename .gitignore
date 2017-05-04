@@ -17,6 +17,7 @@ node_modules
 *.log
 *.gz
 dist
+compiled
 
 # IDE
 .idea
