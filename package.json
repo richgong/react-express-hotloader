@@ -33,6 +33,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/freeauto/react-express-hotloader"
-  }
+    "url": "git+https://github.com/freeauto/react-express-hotloader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freeauto/react-express-hotloader/issues"
+  },
+  "homepage": "https://github.com/freeauto/react-express-hotloader#readme",
+  "bin": {
+    "react-express-hotloader": "www.js"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-hot-loader",
+    "react-hot-loader-3",
+    "react-hot-loader3",
+    "express",
+    "expressjs",
+    "express-js",
+    "ejs",
+    "ejs-templates",
+    "babel",
+    "nodemon",
+    "universal-javascript"
+  ]
 }
