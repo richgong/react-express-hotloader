@@ -4,7 +4,7 @@ var http = require('http')
 var app = require(IS_PROD ? '../dist' : '../server').default
 
 
-var PORT = process.env.GUN_PORT || 3000
+var PORT = process.env.GUN_PORT || process.env.PORT || 3000
 var server = http.createServer(app)
 
 server.listen(PORT)

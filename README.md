@@ -1,5 +1,7 @@
 # React Express Hotloader
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 I know there's a lot of boilerplate examples, but it was actually kinda hard to find this exact combination:
 
 * React
