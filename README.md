@@ -5,8 +5,8 @@ I know there's a lot of boilerplate examples, but it was actually kinda hard to 
 * React
 * Express server
 * Auto-reloading Express server (only in development)
-* React hotloader running on Express (only in development)
-* Babel for both React frontend and Express backend
+* [react-hot-loader](https://github.com/gaearon/react-hot-loader) (version 3) running on Express (only in development)
+* Babel for both React frontend **and** Express backend
 * EJS templates
 
 Hence, I made this.

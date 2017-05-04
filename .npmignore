@@ -21,3 +21,9 @@ compiled
 
 # IDE
 .idea
+
+# excluded for npm
+server
+_include.sh
+bin
+assets
