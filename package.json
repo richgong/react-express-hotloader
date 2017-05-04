@@ -1,6 +1,6 @@
 {
   "name": "react-express-hotloader",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ReactJS, ExpressJS with react-hot-loader, Babel",
   "main": "dist/index.js",
   "scripts": {
