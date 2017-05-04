@@ -4,16 +4,16 @@ I know there's a lot of boilerplate examples, but it was actually kinda hard to 
 
 * ReactJS
 * ExpressJS server
-* Auto-reloading ExpressJS server
-* Hotloader running on ExpressJS in localdev, but not in production
-* Babel for both React frontend and ExpressJS backend
+* Auto-reloading Express server (only in development)
+* React hotloader running on Express (only in development)
+* Babel for both React frontend and Express backend
 * EJS templates
 
 Hence, I made this.
 
 ### Install and run
 
-On localhost:
+In development:
 
 ```
 npm install
@@ -24,7 +24,7 @@ In production:
 
 ```
 npm install --production
-npm run build # builds all the react files
+npm run build
 npm run serve
 ```
 
