@@ -1,6 +1,6 @@
 {
   "name": "react-express-hotloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ReactJS, ExpressJS with Hot Loader, Babel",
   "main": "server/index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "webpack-dev-server": "^2.2.0",
     "webpack-hot-middleware": "^2.18.0"
   },
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/freeauto/react-express-hotloader"
   }
