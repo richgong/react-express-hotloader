@@ -12,18 +12,16 @@ let app = express()
 
 
 if (!IS_PROD) { // setup HotLoader
-    var webpack = require('webpack')
-    var config = require(path.join(process.cwd(), 'webpack.config'))
+    let webpack = require('webpack')
+    let config = require(path.join(process.cwd(), 'webpack.config'))
 
-    var entry = config.entry;
-    for (var key in entry) {
-        if (key.startsWith('load')) {
-            console.warn("hotLoading:", key)
-            entry[key] = [
-                'webpack-hot-middleware/client?path=http://localhost:3000/__webpack_hmr',
-                'react-hot-loader/patch',
-                entry[key]]
-        }
+    let entry = config.entry;
+    for (let key in entry) {
+        console.warn("hotLoading:", key)
+        entry[key] = [
+            'webpack-hot-middleware/client?path=http://localhost:3000/__webpack_hmr',
+            'react-hot-loader/patch',
+            entry[key]]
     }
 
     config.module.rules[0].use.options.plugins = ['react-hot-loader/babel']
@@ -32,10 +30,7 @@ if (!IS_PROD) { // setup HotLoader
         path.join(process.cwd(), './node_modules/')
     ]))
 
-    var publicPath = config.output.publicPath
-    config.output.publicPath = 'http://localhost:3000' + publicPath
-
-    var compiled = webpack(config)
+    let compiled = webpack(config)
 
     app.use(require('webpack-dev-middleware')(compiled, {
         noInfo: true,
@@ -73,7 +68,7 @@ app.use((err, req, res, next) => {
     res.locals.message = err.message;
     res.locals.error = process.env.NODE_ENV == 'production' ? {} : err
     res.status(err.status || 500)
-    console.error("ERROR:", err)
+    console.error("ERROR:", req.url, err)
     res.render('error')
 })
 
